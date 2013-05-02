@@ -56,7 +56,7 @@
                 <!-- Defines the input box, and the variable that represents it (called goal). CMSC132 will be displayed as default-->
                 <tbody><tr><td>
 <div class='input-append'>
-<input type='text' id='goal' name='goal' onchange="$.post('ajax.php', { query: $('#goal').val() }, function(data) { $('#goal').attr('data-source', data); });" data-minLength=4 data-provide='typeahead'/>
+<input type='text' id='goal' name='goal' onchange="$.post('ajax.php', { query: $('#goal').val() }, function(data) { $('#goal').attr('data-source', data); });" data-provide='typeahead'/>
 <a class='btn btn-primary'><i class='icon-search icon-white'></i></a>
 </div>
 
@@ -70,7 +70,7 @@
               </table>  
               </form>
 <div class='row-fluid'>
-<div class='offset2 span8' style='overflow: hidden;' id="center-container"><div class='span10' style="height: 350px; overflow: hidden;" id="treediv"></div></div>
+<div style='overflow: hidden;' id="center-container"><div style="height: 350px; width: 350px; overflow: hidden;" id="treediv"></div></div>
 </div>
 <br /><br />
 <!-- Logs into MySQL database, localhost: server location, hardshell: MySQL username, d0ntgue55m3: password, hardshell: databasename -->
