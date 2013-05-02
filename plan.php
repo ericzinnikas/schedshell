@@ -123,14 +123,14 @@ unset($list[array_search($class, $list)]);
 <div class='offset1 span3'>
 <table class='table table-bordered table-hover'>
 <thead>
-<tr><th style='text-align: center;'>Not Yet Eligible</th></tr>
+<tr><th style='text-align: center;'>Not Yet Eligible (Click for More Info)</th></tr>
 </thead>
 <tbody>
 <?php
 foreach( $_POST['taken'] as $class ) { unset($list[array_search($class, $list)]); }
 foreach( $list as $class ) {
 ?>
-<tr><td><?php echo $class; ?></td></tr>
+<tr><td><a href='search.php?goal=<?php echo $class; ?>'><?php echo $class; ?></a></td></tr>
 <?php
 }
 ?>

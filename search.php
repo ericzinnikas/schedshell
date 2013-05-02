@@ -13,6 +13,7 @@
         <script src='js/jit.js' type='text/javascript'></script>
         
         <!-- Checks if user has entered a valid course into the text box, then includes tree stuff -->
+      <?php if( isset($_GET['goal']) && !isset($_POST['goal']) ) { $_POST['goal'] = $_GET['goal']; } ?>
         <script type='text/javascript'>
       <?php if( isset($_POST['goal']) && preg_match("/\w{4}\d{3}\w?/", $_POST['goal']) ) {
           include('tree.js.php');
