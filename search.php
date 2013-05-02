@@ -54,7 +54,19 @@
               <table class='table table-bordered table-hover'>
                 <thead><tr><th style='text-align: center;'>Course Code</th></tr></thead>
                 <!-- Defines the input box, and the variable that represents it (called goal). CMSC132 will be displayed as default-->
-                <tbody><tr><td><input type='text' name='goal' placeholder='CMSC132' /></td></tr></tbody>
+                <tbody><tr><td>
+<div class='input-append'>
+<input type='text' name='goal' data-provide='typeahead' data-minLength='4' data- placeholder='CMSC132' />
+<a class='btn btn-primary'><i class='icon-search icon-white'></i></a>
+</div>
+
+      <script>
+      $.post('ajax.php', { query: $('#goal').val() }, function(data){
+        $('#goal').attr('data-source', data);
+      });
+      </script>
+
+</td></tr></tbody>
               </table>  
               </form>
 <div class='row-fluid'>

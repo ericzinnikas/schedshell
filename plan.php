@@ -47,8 +47,18 @@ $list = array( "CMSC131", "CMSC132", "CMSC216", "CMSC250", "CMSC330", "CMSC351",
 <?php if( !isset($_POST['page']) || $_POST['page'] == '0' ) { ?>
 <form action='' method='POST'>
   <select>
+    <option>Bio Engineering</option>
+    <option>Chemistry</option>
+    <option>Communications</option>
     <option>Computer Science</option>
+    <option>Economics</option>
+    <option>Finance</option>
+    <option>Government and Politics</option>
     <option>Journalism</option>
+    <option>Marketing</option>
+    <option>Material Engineering</option>
+    <option>Physics</option>
+    <option>Supply Chain Management</option>
   </select>
   <input type='hidden' name='page' value='1'>
   <br /><input type='submit' value='Next'>
