@@ -30,13 +30,13 @@
 
     <body>
 
-    <?php printNavbar("plan"); ?>
+    <?php printNavbar("home"); ?>
 
     <div class='container-fluid'>
 
         <!-- START: main page -->
         <div class='row-fluid'>
-            <?php printNavlist("plan"); ?>
+            <?php printNavlist("home"); ?>
             <div class='offset2 span6'><center>
 <a href='search.php' ><img src='img/bigS.png' /></a>
             </center></div>

@@ -39,6 +39,7 @@ echo $navbar;
 }
 
 function printNavlist($name) {
+  $homeclass = '';
   $preclass = '';
   $planclass= '';
 
@@ -46,6 +47,8 @@ if($name == 'pre') {
   $preclass = "class='active'";
 } elseif ($name == 'plan') {
   $planclass = "class='active'";
+} elseif ($name == 'home') {
+  $homeclass = "class='active'";
 }
 
 
@@ -54,7 +57,7 @@ $navlist = <<< LIST
     <div class='well sidebar-nav'>
       <ul class='nav nav-list'>
         <li class='nav-header'>Tools</li>
-        <li><a href='index.php'>Home</a></li>
+        <li $homeclass ><a href='index.php'>Home</a></li>
         <li $preclass ><a href='search.php'>Prerequisite Search</a></li>
         <li $planclass ><a href='plan.php'>Four Year Plan</a></li>
         <li class='nav-header'>Navigation</li>
