@@ -1,4 +1,8 @@
 <?php include('nav.inc.php'); ?>
+<?php if( !phpCAS::isAuthenticated() ) {
+  header('Location: index.php');
+}
+?>
 <!DOCTYPE html>
 <html>
 	<head lang="en">
