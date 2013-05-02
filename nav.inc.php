@@ -23,7 +23,7 @@ $navbar = <<< NAV
 <div class='navbar navbar-fixed-top'>
     <div class='navbar-inner'>
       <div class='container-fluid'>
-        <a style="max-height: 40px; overflow: visible; padding-top: 5px; padding-bottom: 0;" href='search.php' class='brand'><img src='img/slogo50.png' /><span style="margin-top: 10px; padding-left: 15px; position: relative; top: 5px;">SCHEDSHELL</span></a>
+        <a style="max-height: 40px; overflow: visible; padding-top: 5px; padding-bottom: 0;" href='index.php' class='brand'><img src='img/slogo50.png' /><span style="margin-top: 10px; padding-left: 15px; position: relative; top: 5px;">SCHEDSHELL</span></a>
         <p class='pull-right'><a href=$login class='btn btn-primary'>$user</a></p>
         <ul class='nav'>
           <li><a $index_active href='search.php'>Home</a></li>
