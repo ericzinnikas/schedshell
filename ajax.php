@@ -7,6 +7,7 @@ if( $mysqli->connect_errno) {
 
 $stmt = $mysqli->prepare("SELECT name FROM course_info WHERE name LIKE CONCAT(?, '%')");
 $param = $_POST['query'];
+echo $_POST['query'];
 $stmt->bind_param('s', $param);
 $stmt->execute();
 $stmt->bind_result($name);
