@@ -27,7 +27,7 @@ $navbar = <<< NAV
         <p class='pull-right'><a href=$login class='btn btn-primary'>$user</a></p>
         <ul class='nav'>
           <li><a $index_active href='search.php'>Home</a></li>
-          <li><a href='#'>My Account</a></li>
+          <li><a href='account.php'>My Account</a></li>
           <li><a href='#'>About</a></li>
         </ul>
       </div>
