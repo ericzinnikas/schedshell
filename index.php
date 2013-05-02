@@ -37,9 +37,9 @@
         <!-- START: main page -->
         <div class='row-fluid'>
             <?php printNavlist("plan"); ?>
-            <div class='offset2 span6'>
+            <div class='offset2 span6'><center>
 <a href='search.php' ><img src='img/bigS.png' /></a>
-            </div>
+            </center></div>
         </div>
         <!-- END: main page -->
 
