@@ -56,7 +56,7 @@
                 <!-- Defines the input box, and the variable that represents it (called goal). CMSC132 will be displayed as default-->
                 <tbody><tr><td>
 <div class='input-append'>
-<input type='text' id='goal' name='goal' onchange="$.post('ajax.php', { query: $('#goal').val() }, function(data) { $('#goal').attr('data-source', data); });" data-minLength='4' data-provide='typeahead'/>
+<input type='text' id='goal' name='goal' onchange="$.post('ajax.php', { query: $('#goal').val() }, function(data) { $('#goal').attr('data-source', data); });" data-minLength=4 data-provide='typeahead'/>
 <a class='btn btn-primary'><i class='icon-search icon-white'></i></a>
 </div>
 
