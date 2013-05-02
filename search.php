@@ -56,7 +56,7 @@
                 <!-- Defines the input box, and the variable that represents it (called goal). CMSC132 will be displayed as default-->
                 <tbody><tr><td>
 <div class='input-append'>
-<input type='text' name='goal' data-provide='typeahead' data-source='["CMSC131", "CMSC132"]'/>
+<input type='text' id='goal' name='goal' data-provide='typeahead'/>
 <a class='btn btn-primary'><i class='icon-search icon-white'></i></a>
 </div>
 
