@@ -4,7 +4,7 @@ $mysqli = new mysqli("localhost", "hardshell", "d0ntgue55m3", "hardshell");
 if( $mysqli->connect_errno) {
   echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 }  
-
+if( !isset($_POST['query']) ) { $_POST['query'] = 'CMSC'; }
 $stmt = $mysqli->prepare("SELECT name FROM course_info WHERE name LIKE CONCAT(?, '%')");
 $param = $_POST['query'];
 echo "query: ".$_POST['query'].": query";
