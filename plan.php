@@ -130,7 +130,7 @@ unset($list[array_search($class, $list)]);
 foreach( $_POST['taken'] as $class ) { unset($list[array_search($class, $list)]); }
 foreach( $list as $class ) {
 ?>
-<tr><td><a href='search.php?goal=<?php echo $class; ?>' class='btn btn-link'><?php echo $class; ?></a></td></tr>
+<tr><td><b><a href='search.php?goal=<?php echo $class; ?>'><?php echo $class; ?></a></b></td></tr>
 <?php
 }
 ?>
