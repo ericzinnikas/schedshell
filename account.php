@@ -1,5 +1,5 @@
 <?php include('nav.inc.php'); ?>
-<?php if( !phpCAS::isAuthenticated() ) {
+<?php if( !phpCAS::isSessionAuthenticated() ) {
   header('Location: index.php');
 }
 ?>
