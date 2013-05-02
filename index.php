@@ -39,7 +39,7 @@
             <?php printNavlist("home"); ?>
             <div class='offset2 span6'><center>
 <a href='search.php' ><img width='300px' src='img/bigS.png' /></a><br /><br />
-<a class='btn btn-danger btn-large' href='search.php'>Get Started!</a>
+<a class='btn btn-danger btn-large' href='search.php'>Get Started &raquo;</a>
             </center></div>
         </div>
         <!-- END: main page -->
